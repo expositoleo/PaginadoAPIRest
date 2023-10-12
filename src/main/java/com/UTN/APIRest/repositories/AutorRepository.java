@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
 @Repository
 public interface AutorRepository extends BaseRepository<Autor,Long> {
 
@@ -38,4 +37,3 @@ public interface AutorRepository extends BaseRepository<Autor,Long> {
     )
     Page<Autor> searchNativo(@Param("filtro") String filtro, Pageable pageable);
 }
-

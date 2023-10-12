@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
 @Service
 public class AutorServiceImpl extends BaseServiceImpl<Autor,Long> implements AutorService{
 
@@ -21,7 +20,6 @@ public class AutorServiceImpl extends BaseServiceImpl<Autor,Long> implements Aut
         super(baseRepository);
         this.autorRepository = autorRepository;
     }
-
     @Override
     public List<Autor> search(String filtro) throws Exception {
         try{

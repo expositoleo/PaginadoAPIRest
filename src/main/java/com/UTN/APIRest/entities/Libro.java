@@ -19,7 +19,7 @@ public class Libro extends BaseEntidad{
     @Column(name="titulo")
     private String titulo;
     @Column(name = "fecha")
-    private int  fecha;
+    private int fecha;
     @Column(name="genero")
     private String genero;
     @Column(name="paginas")

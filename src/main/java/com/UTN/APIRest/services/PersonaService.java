@@ -10,4 +10,5 @@ public interface PersonaService extends BaseService<Persona,Long> {
     List<Persona> search(String filtro) throws Exception;
 
     Page<Persona> search(String filtro, Pageable pageable) throws Exception;
+
 }

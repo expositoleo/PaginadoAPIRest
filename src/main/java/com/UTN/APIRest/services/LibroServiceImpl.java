@@ -1,6 +1,7 @@
 package com.UTN.APIRest.services;
 
 import com.UTN.APIRest.entities.Libro;
+import com.UTN.APIRest.entities.Localidad;
 import com.UTN.APIRest.repositories.BaseRepository;
 import com.UTN.APIRest.repositories.LibroRepository;
 import org.springframework.beans.factory.annotation.Autowired;

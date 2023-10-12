@@ -21,7 +21,6 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona,Long> implements
         super(baseRepository);
         this.personaRepository = personaRepository;
     }
-
     @Override
     public List<Persona> search(String filtro) throws Exception {
         try{
@@ -41,4 +40,5 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona,Long> implements
             throw new Exception(e.getMessage());
         }
     }
+
 }

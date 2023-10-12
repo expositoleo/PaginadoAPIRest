@@ -23,20 +23,20 @@ public class DomicilioServiceImpl extends BaseServiceImpl<Domicilio,Long> implem
 
     @Override
     public List<Domicilio> search(String filtro) throws Exception {
-        try{
+        try {
             List<Domicilio> domicilios = domicilioRepository.searchNativo(filtro);
             return domicilios;
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
     }
 
     @Override
     public Page<Domicilio> search(String filtro, Pageable pageable) throws Exception {
-        try{
-            Page<Domicilio> domicilios= domicilioRepository.searchNativo(filtro, pageable);
+        try {
+            Page<Domicilio> domicilios = domicilioRepository.searchNativo(filtro, pageable);
             return domicilios;
-        } catch (Exception e){
+        } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
     }

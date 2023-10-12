@@ -33,4 +33,3 @@ public interface LocalidadRepository extends BaseRepository<Localidad,Long> {
     )
     Page<Localidad> searchNativo(@Param("filtro") String filtro, Pageable pageable);
 }
-

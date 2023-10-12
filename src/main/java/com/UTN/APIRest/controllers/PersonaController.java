@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")
 @RequestMapping(path = "api/v1/personas")
 public class PersonaController extends BaseControllerImpl<Persona,PersonaServiceImpl> {
-    //metodos q consume el servicio
     @GetMapping("/search")
     public ResponseEntity<?> search(@RequestParam String filtro){
         try{
@@ -29,4 +28,6 @@ public class PersonaController extends BaseControllerImpl<Persona,PersonaService
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error, por favor intente mas tarde\"}");
         }
     }
+
+
 }

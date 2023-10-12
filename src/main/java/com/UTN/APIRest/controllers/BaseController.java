@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.io.Serializable;
 
 public interface BaseController <E extends BaseEntidad, ID extends Serializable>{
-    //mets V15 no tiene throws
     public ResponseEntity<?> getAll() throws Exception;
     public ResponseEntity<?> getAll(Pageable pageable) throws Exception;
     public ResponseEntity<?> getOne(@PathVariable ID id) throws Exception;

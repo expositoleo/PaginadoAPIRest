@@ -32,6 +32,4 @@ public interface LibroRepository extends BaseRepository<Libro,Long>{
             nativeQuery = true
     )
     Page<Libro> searchNativo(@Param("filtro") String filtro, Pageable pageable);
-
-
 }

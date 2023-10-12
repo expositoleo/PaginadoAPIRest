@@ -21,7 +21,6 @@ public abstract class BaseControllerImpl<E extends BaseEntidad, S extends BaseSe
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error, por favor intente mas tarde\"}");
         }
     }
-
     @GetMapping("/paged")
     public ResponseEntity<?> getAll(Pageable pageable) {
         try {
@@ -31,7 +30,7 @@ public abstract class BaseControllerImpl<E extends BaseEntidad, S extends BaseSe
         }
     }
 
-            @GetMapping("/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> getOne(@PathVariable Long id){
         try{
             return ResponseEntity.status(HttpStatus.OK).body(servicio.findById(id));
