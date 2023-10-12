@@ -27,6 +27,7 @@ public abstract class BaseServiceImpl <E extends BaseEntidad,ID extends Serializ
             throw new Exception(e.getMessage());
         }
     }
+
     @Override
     @Transactional
     public Page<E> findAll(Pageable pageable) throws Exception{
